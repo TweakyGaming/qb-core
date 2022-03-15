@@ -1,74 +1,96 @@
 QBShared = QBShared or {}
-QBShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
+QBShared.ForceJobDefaultDutyAtLogin = false -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 QBShared.Jobs = {
-	['unemployed'] = {
-		label = 'Civilian',
+    
+    ['whitelist'] = {
+		label = 'Bürgergeld',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Freelancer',
+                name = 'Stufe 1',
                 payment = 10
+            },
+            ['1'] = {
+                name = 'Stufe 2',
+                payment = 20
+            },
+            ['2'] = {
+                name = 'Stufe 3',
+                payment = 30
+            },
+            ['3'] = {
+                name = 'Stufe 4',
+                payment = 40
+            },
+            ['4'] = {
+                name = 'Stufe 5',
+                payment = 50
             },
         },
 	},
+
+    --Jobsstaatlich
 	['police'] = {
-		label = 'Law Enforcement',
+		label = 'LSPD',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Recruit',
-                payment = 50
+                payment = 100
             },
 			['1'] = {
                 name = 'Officer',
-                payment = 75
+                payment = 150
             },
 			['2'] = {
                 name = 'Sergeant',
-                payment = 100
+                payment = 200
             },
 			['3'] = {
                 name = 'Lieutenant',
-                payment = 125
+                payment = 250
             },
 			['4'] = {
                 name = 'Chief',
 				isboss = true,
-                payment = 150
+                payment = 300
             },
         },
 	},
 	['ambulance'] = {
-		label = 'EMS',
+		label = 'LSMC',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Recruit',
-                payment = 50
+                payment = 100
             },
 			['1'] = {
                 name = 'Paramedic',
-                payment = 75
+                payment = 150
             },
 			['2'] = {
                 name = 'Doctor',
-                payment = 100
+                payment = 200
             },
 			['3'] = {
                 name = 'Surgeon',
-                payment = 125
+                payment = 250
             },
 			['4'] = {
                 name = 'Chief',
 				isboss = true,
-                payment = 150
+                payment = 300
             },
         },
 	},
-	['realestate'] = {
+
+    --JobsGewerbe
+	
+    ['realestate'] = {
 		label = 'Real Estate',
 		defaultDuty = true,
 		offDutyPay = false,
@@ -124,17 +146,6 @@ QBShared.Jobs = {
             },
         },
 	},
-     ['bus'] = {
-		label = 'Bus',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Driver',
-                payment = 50
-            },
-		},
-	},
 	['cardealer'] = {
 		label = 'Vehicle Dealer',
 		defaultDuty = true,
@@ -163,8 +174,10 @@ QBShared.Jobs = {
             },
         },
 	},
-	['mechanic'] = {
-		label = 'Mechanic',
+    
+    -- Jims Mechanic Script
+    ['mechanic'] = {
+		label = 'Auto Care',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
@@ -191,6 +204,181 @@ QBShared.Jobs = {
             },
         },
 	},
+
+    ['acls'] = {
+		label = 'Auto Club Los Santos',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+
+    ['tuner'] = {
+		label = 'LS Tuner Shop',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+    ['bennys'] = {
+		label = 'Benny`s Motorworks',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+
+    ['harmony'] = {
+		label = 'Harmony Repair',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+
+    ['customs'] = {
+		label = 'Los Santos Customs',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+
+    ['beekers'] = {
+		label = 'Beekers Garage & Parts',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+    -- Tuner EndS
+    
 	['judge'] = {
 		label = 'Honorary',
 		defaultDuty = true,
@@ -209,72 +397,6 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Associate',
-                payment = 50
-            },
-        },
-	},
-	['reporter'] = {
-		label = 'Reporter',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Journalist',
-                payment = 50
-            },
-        },
-	},
-	['trucker'] = {
-		label = 'Trucker',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Driver',
-                payment = 50
-            },
-        },
-	},
-	['tow'] = {
-		label = 'Towing',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Driver',
-                payment = 50
-            },
-        },
-	},
-	['garbage'] = {
-		label = 'Garbage',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Collector',
-                payment = 50
-            },
-        },
-	},
-	['vineyard'] = {
-		label = 'Vineyard',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Picker',
-                payment = 50
-            },
-        },
-	},
-	['hotdog'] = {
-		label = 'Hotdog',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Sales',
                 payment = 50
             },
         },

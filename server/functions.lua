@@ -208,7 +208,6 @@ function PaycheckLoop()
     end
     SetTimeout(QBCore.Config.Money.PayCheckTimeOut * (60 * 1000), PaycheckLoop)
 end
-
 -- Callbacks
 
 function QBCore.Functions.CreateCallback(name, cb)
