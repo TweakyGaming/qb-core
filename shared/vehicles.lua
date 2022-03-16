@@ -4435,4 +4435,26 @@ QBShared.Vehicles = {
 		['hash'] = `nimbus`,
 		['shop'] = 'air',
 	},
+
+
+
+	--Modded Cars ich bin dumm!
+	['golf75r'] = { --Golf7
+		['name'] = 'Golf 7.5R',
+		['brand'] = 'VOLKSWAGEN',
+		['model'] = 'golf75r',
+		['price'] = 82500,
+		['category'] = 'compacts',
+		['hash'] = `golf75r`,
+		['shop'] = 'pdm',
+	},
+	['sunrise1'] = { --Sunrise R
+		['name'] = 'Sunrise R',
+		['brand'] = 'MAIBATSU',
+		['model'] = 'sunrise1',
+		['price'] = 82500,
+		['category'] = 'sportsclassic',
+		['hash'] = `sunrise1`,
+		['shop'] = 'pdm',
+	},
 }
