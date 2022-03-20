@@ -4457,4 +4457,22 @@ QBShared.Vehicles = {
 		['hash'] = `sunrise1`,
 		['shop'] = 'pdm',
 	},
+	['teslapd'] = { --Tesla Prior
+		['name'] = 'Model S Prior',
+		['brand'] = 'Tesla',
+		['model'] = 'teslapd',
+		['price'] = 145000,
+		['category'] = 'sports',
+		['hash'] = `teslapd`,
+		['shop'] = 'pdm',
+	},
+		['elegyrh7'] = { --Tesla Prior
+		['name'] = 'Elegy RH7',
+		['brand'] = 'Annis',
+		['model'] = 'elegyrh7',
+		['price'] = 85700,
+		['category'] = 'sportsclassic',
+		['hash'] = `elegyrh7`,
+		['shop'] = 'pdm',
+	},
 }
