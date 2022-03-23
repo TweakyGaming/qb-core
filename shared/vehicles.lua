@@ -4435,6 +4435,15 @@ QBShared.Vehicles = {
 		['hash'] = `nimbus`,
 		['shop'] = 'air',
 	},
+	['taco'] = {
+		['name'] = 'Taco Van',
+		['brand'] = 'Unknown manufacturer',
+		['model'] = 'taco',
+		['price'] = 55000,
+		['category'] = 'vans',
+		['hash'] = `taco`,
+		['shop'] = 'car',
+	},
 
 
 
@@ -4466,7 +4475,7 @@ QBShared.Vehicles = {
 		['hash'] = `teslapd`,
 		['shop'] = 'pdm',
 	},
-		['elegyrh7'] = { --Tesla Prior
+	['elegyrh7'] = { --Tesla Prior
 		['name'] = 'Elegy RH7',
 		['brand'] = 'Annis',
 		['model'] = 'elegyrh7',
@@ -4474,5 +4483,23 @@ QBShared.Vehicles = {
 		['category'] = 'sportsclassic',
 		['hash'] = `elegyrh7`,
 		['shop'] = 'pdm',
+	},
+	['jester5'] = { --Tesla Prior
+		['name'] = 'Jester Custom Classic',
+		['brand'] = 'Dinka',
+		['model'] = 'jester5',
+		['price'] = 110550,
+		['category'] = 'sportsclassic',
+		['hash'] = `jester5`,
+		['shop'] = 'pdm',
+	},
+	['taco2'] = {
+		['name'] = 'Taco2 Van',
+		['brand'] = 'Unknown manufacturer',
+		['model'] = 'taco2',
+		['price'] = 55000,
+		['category'] = 'vans',
+		['hash'] = `taco2`,
+		['shop'] = 'car',
 	},
 }
